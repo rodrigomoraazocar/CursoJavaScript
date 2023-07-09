@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritmeticas</title>
+</head>
+<body>
+    <script>
+        //Precedencia de los operadores aritmeticos
+        /*
+        () - Primero los parentesis
+        ** - Segundo la potencia
+        * / %  - Tercero vienen los operadores (multiplicación, división y Mod)
+               Si hay más de un operador en la expresión, de los (multiplicación, división y Mod) debemos verificar de izquierda a derecha.
+        
+        
+        */
+        var a = parseInt(window.prompt('Digite um valor'));
+        var b = parseInt(window.prompt('Digite um valor'));
+
+
+          //Operadores Lógicos
+        window.alert(`${a} es mayor que ${b}? `+(a>b));
+        window.alert(`${a} es menor que ${b}? `+(a<b));
+        window.alert(`${a} es mayor o igual a ${b}? `+(a>=b));
+        window.alert(`${a} es menor o igual a ${b}? `+(a<=b));
+        window.alert(`${a} es igual a ${b}? `+(a==b));
+        window.alert(`${a} es distinto de ${b}? `+(a!=b));
+        window.alert(`${a} es igual a ${b}?`+(a===b)); //Verifica si es identico y del mismo tipo de dato(number,string,etc)
+        window.alert(`Verificación con Ternario ${a} es Mayor que ${b}:`+(a>b?true:false));
+
+        // ! significa negación
+        //  && significa "e" o "and"
+        // || significa "o" o "or" 
+
+        //Operadores Aritmeticos
+
+        /* window.alert('Resultado da Multiplicação: '+(a*b)); 
+        window.alert('Resultado da operação MoD: '+(a%b));
+        window.alert('Resultado da Potencia: '+(a**b));
+        window.alert('Resultado da Divisão: '+(a/b));
+
+        window.alert('Resultado da Incrementação: '+(a++));
+        window.alert('Resultado da Operação Decrementação: '+(a--)); */
+        
+         
+    </script>
+</body>
+</html>
