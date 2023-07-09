@@ -19,7 +19,7 @@
         var nome = window.prompt('Qual seu nome?');
         document.write(`Olá, ${nome}. Seu nome tem ${nome.length} caracteres.<br/>`);
         document.write(`Seu nome é ${nome.toUpperCase()}<br/>`);
-        document.write(`Seu nome é ${nome.toLowerCase() }`);
+        document.write(`Seu nome é ${nome.toLowerCase() }<br/>`);
 
 
         //Conversiones
@@ -27,6 +27,7 @@
         // replace sirve para sustituir
         var num=1454.8;
         document.write (num.toFixed(2).replace('.',','));
+        //num.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})
 
     </script>
 </body>
