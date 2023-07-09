@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+
+    <script>
+
+        var nome = window.prompt('Qual seu nome?');
+        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} caracteres.<br/>`);
+        document.write(`Seu nome é ${nome.toUpperCase()}<br/>`);
+        document.write(`Seu nome é ${nome.toLowerCase() }`);
+
+
+        //Conversiones
+        //toFixed(2) -- puedes alterar con la cantidad decimales 
+        // replace sirve para sustituir
+        var num=1454.8;
+        document.write (num.toFixed(2).replace('.',','));
+
+    </script>
+</body>
+
+</html>

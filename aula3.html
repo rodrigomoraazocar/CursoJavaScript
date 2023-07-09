@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+
+
+    <style>
+        body {
+
+            background-color: blueviolet;
+            color: white;
+            font: normal 20 pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <h1>Olá, </h1>
+    <p>Me llamo Philip Schmidt</p>
+
+    <script>
+
+
+        //var celNum = window.prompt('Digite o número do seu celular')
+        //             window.alert('O níumero do seu celular é: '+ celNum);
+
+        //Conversões
+        // ParseInt ou ParseFloat - converte de String para Number
+        //Converter de Number para String, utilizar to.String -> num1.ToString
+        //s.length - quantidade de caracteres
+        //s.toUpperCase - converte para maiuscula. 
+
+
+            var num1 = Number.parseInt(window.prompt ('Digite um número: '));
+            var num2 = Number.parseInt(window.prompt ('Digite um número: '));
+
+            var s = num1+num2;
+
+            //Colocando crase ao invez de aspas, no momento de imprimir, isto irá permitir utilizar temnplate string, ou seja, utilizando $(variavel)
+            window.alert(`O resultado da soma é:+${s}`);
+    </script>
+
+
+</body>
+
+</html>
