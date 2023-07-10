@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        body {
+            background-color: beige;
+            font: normal 18pt Arial;
+            color: aliceblue;
+        }
+    </style>
+    <title>Aula sobre DOM</title>
+</head>
+
+<body>
+
+    <h1>Entendendo sobre <strong> DOM </strong></h1>
+    <p>DOM = Document Object Model</p>
+
+    <div id="msg"> Exemplo</div>
+    <p> Árvore do DOM</p>
+
+    <img src="DOM.jpg" alt="Árvore DOM">
+
+
+
+    <script>
+        //Ejemplos
+         
+        // Por Nome
+        //document.getElementsByTagName
+        
+        //Por Id
+        //document.getElementById
+        
+        //Por Classe
+        //document.getElementsByClassName
+         
+         //Por Selector
+         //document.querySelector
+         //document.querySelectorAll()
+
+
+
+        var corpo = window.document.body;
+        corpo.style.background = 'black';
+
+
+        //Obteniendo el contenido del primer tag (<p>) de mi archivo HTML
+        var p1 = document.getElementsByTagName('p')[0];
+
+
+        //Escribiendo el valor de p1 en mi HTML
+        window.document.write(p1.innerHTML);
+
+        //Cambiando el color de mi texto en azul
+        p1.style.color = 'green';
+
+        //Obnteniendo el contenido de una tag por Id
+        var msg = window.document.getElementById('msg');
+
+        //Escribo en mi archivo HTML el contenido de mi id=msg que se encontraba en mi tag <div>
+      document.write(msg.innerHTML);
+
+
+
+    </script>
+
+</body>
+
+</html>
