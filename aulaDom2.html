@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+
+
+
+
+
+
+    <style>
+        /*Selector # - utilizando para la id area de la tag <div> */
+        div#area {
+            font: normal 20 pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="area">
+        Interaja....
+    </div>
+
+
+
+    <script>
+        var area = window.document.getElementById('area');
+        area.addEventListener("click", clicar);
+        area.addEventListener("mouseenter", entrar);
+        area.addEventListener("mouseout", sair);
+
+
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red';
+
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green';
+        }
+
+
+
+    </script>
+
+
+
+
+
+    <p>Visitar esta página para conocer los eventos de CSS</p>
+
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events">Site Mozilla Eventos CSS</a>
+
+</body>
+
+</html>
